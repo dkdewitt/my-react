@@ -1,0 +1,16 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "~bourbon-neat/app/assets/stylesheets/neat";
+
+.main-header {
+	margin-top: 25px;
+	margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px #e8e8e8 solid;
+  height: 50px;
+
+  .header-content {
+  	margin: 0 25px 0 25px;
+  	font-size: 24px;
+  	font-weight: 200;
+  }
+}

@@ -1,0 +1,28 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "~bourbon-neat/app/assets/stylesheets/neat";
+@import "~scss/fonts";
+.box {
+
+	@include fill-parent();
+
+	@include clearfix();
+	.box-title {
+		border-top:    1px solid  #ddd;
+		border-right:  1px solid #ddd;
+		//border-bottom: 3px dotted #f00
+		border-left:   1px solid  #ddd;
+		padding: 15px 0 15px 25px;
+
+		h3 {
+			font-size: 24px;
+			font-weight: 300;
+			font-style: "Montserrat";
+		}
+	}
+
+	.box-content {
+		padding: 15px 15px 0 25px;
+		border: 1px #ddd solid;
+		overflow: hidden;
+	}
+}

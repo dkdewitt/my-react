@@ -1,0 +1,48 @@
+@import "../../../scss/fonts";
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "~bourbon-neat/app/assets/stylesheets/neat";
+
+
+.sidebar{
+	@include outer-container();
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width: 210px;
+	height:100%;
+	background-color: #C6C8CA;
+
+	font-family: 'Work Sans', sans-serif;
+
+	&.hide {
+		display:none;
+		@include transition(all .2s ease-in-out);
+	}
+
+	.title {
+		margin-left: 10px;
+	  font-size: 16px;
+	  line-height: 50px;
+	  text-transform: uppercase;
+	  letter-spacing: 7px;
+	}
+
+
+	ul{
+		list-style: none;
+
+		li {
+
+			a{
+				text-decoration: none;
+			  position: relative;
+			  display: block;
+			  padding: 15px 15px 15px 25px;
+			  font-size: 18px;
+			  color: #444;
+			  font-weight: 300;
+			}
+		}
+	}
+}
