@@ -7,7 +7,7 @@ var commonsPlugin =
 
 var definePlugin = new webpack.DefinePlugin({
   __DEV__: true,
-  __APIURL__: "'http://192.168.2.7:6543/'",
+  __APIURL__: "'http://127.0.0.1:5000/'",
 });
 
 module.exports = {
@@ -52,24 +52,19 @@ module.exports = {
     modulesDirectories: ['app', 'node_modules', 'app/scss'],
     root: path.resolve(__dirname, './')
   },
-  // plugins: [
-  //   commonsPlugin,
-  //   definePlugin,
-  //   new webpack.NoErrorsPlugin()
-  // ],
+
   debug: true,
 
   devtool: 'eval',
 
   plugins: [
-    //commonsPlugin,
     definePlugin,
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
 
-    // Tell babel that we want to hot-reload
+
   babelQuery: {
     presets: ['react-hmre'],
   },
